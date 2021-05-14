@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Baloo 2', cursive;
+}
+#frm{
+    position: absolute;
+    display: block;
+    left: 39%;
+    top: 47%;
+    width: 20%;
+    height: 20%;
+    background: rgba(255, 255, 255, 0);
+    z-index: 3;
+}
+#user {
+    position: absolute;
+    display: block;
+    left: 25%;
+    top: 20%;
+    width: 47%;
+    padding: 5px;
+}
+#pass {
+    position: absolute;
+    display: block;
+    top: 45%;
+    left: 25%;
+    width: 47%;
+    padding: 5px;
+  }
+form label{
+    position: relative;
+    top: 20%;
+    display: block;
+    float: inline-start;
+    width: 10em;
+    margin-top: 16px;
+    margin-left: 93px;
+    margin-right: 1em;
+    padding: 4px;
+}
+.image img {
+    position: absolute;
+    transform: scale(16);
+    left: 47.5%;
+    top: 43%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 0);
+    z-index: 2;
+  }
+#btn{
+    position: absolute;
+    left: 25%;
+    top: 70%;
+    color: rgba(0, 0, 0, 0);
+    background: #a0a0a07e;
+    padding: 6px;
+    margin: auto;
+    width: 50%;
+}
+.banner-text {
+	width: 50%;
+	position: absolute;
+    left: 40.5%;
+    top: 37%;
+    font-size: 30px;
+    overflow: hidden;
+	z-index: 1;
+}
+.animation-area {
+	background: linear-gradient(to left, #1f53a1, #3d853d);
+	width: 100%;
+	height: 100vh;
+}
+.box-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.box-area li {
+	position: absolute;
+	display: inline;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: rgba(255, 255, 255, 0.2);
+	animation: animate 10s linear infinite;
+	bottom: 1130px;
+}
+.box-area li:nth-child(1) {
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0.8s;
+}
+.box-area li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+	left: 42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0.4s;
+	animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+	left: 65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.2s;
+}
+.box-area li:nth-child(7) {
+	left: 80%;
+	width: 0px;
+	height: 0px;
+    background: rgba(255, 255, 255, 0);
+    border-top: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid rgba(255, 255, 255, 0.2);
+	animation-delay: 3.6s;
+}
+.box-area li:nth-child(8) {
+	left: 5%;
+	width: 0px;
+	height: 0px;
+    background: rgba(255, 255, 255, 0);
+    border-top: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid rgba(255, 255, 255, 0.2);
+	animation-delay: 4.5s;
+}
+.box-area li:nth-child(9) {
+	left: 35%;
+	width: 0px;
+	height: 0px;
+    background: rgba(255, 255, 255, 0);
+    border-top: 80px solid transparent;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 80px solid rgba(255, 255, 255, 0.2);
+	animation-delay: 0.2s;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(1300px) rotate(360deg);
+		opacity: 1;
+	}
+}
